@@ -1,0 +1,124 @@
+.App h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.videoInputBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.videoInputBox div {
+  width: 50vw !important;
+  display: flex;
+  justify-content: start;
+}
+
+.videoInput {
+  width: 40vw !important;
+}
+
+.captionInputBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.captionInputBox > div {
+  width: 50vw !important;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.captionInput {
+  width: 40vw !important;
+  margin-bottom: 20px;
+}
+
+.captionTimeBox {
+  display: flex;
+  align-items: center;
+}
+
+.captionTimeInput {
+  width: 19.5vw !important;
+}
+
+.captionTimeBox .captionTimeInput:first-child {
+  margin-right: 1vw;
+}
+
+.button {
+  width: 120px;
+  margin-left: 20px;
+}
+
+.videoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.caption {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.captionIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+/* For phone */
+@media only screen and (max-width: 600px) {
+  .videoInputBox div {
+    width: 90vw !important;
+    display: flex;
+    justify-content: start;
+  }
+
+  .videoInput {
+    width: 70vw !important;
+  }
+
+  .captionInputBox > div {
+    width: 90vw !important;
+    display: flex;
+    /* justify-content: center; */
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .captionInput {
+    width: 59vw !important;
+    margin-bottom: 20px;
+  }
+
+  .captionTimeInput {
+    width: 29vw !important;
+  }
+  .button {
+    width: 110px;
+    margin-left: 20px;
+  }
+}
